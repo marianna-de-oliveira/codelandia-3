@@ -1,0 +1,258 @@
+:root {
+    --bgSite: #d7d4ff;
+    --buttonColor: #6c63ff;
+  
+    --white: #ffffff;
+    --white300: #f9f9f9;
+  
+    --title: #2b2b2b;
+    --text: #555555;
+}
+body{
+    background: var(--white300);
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 100px;
+    background-color: var(--bgSite);
+}
+
+.text h1{
+    font-family: "Merriweather", serif;
+    max-width: 350px;
+    font-size: 2.25em;
+    line-height: 1.5em;
+    color: var(--title);
+    margin-bottom: 1.1em;
+}
+
+.text p{
+    font-family: 'Lato', sans-serif;
+    max-width: 370px;
+    font-size: 1.1em;
+    line-height: 1.75em;
+    color: var(--text);
+}
+
+.top-button{
+    margin-top: 45px;
+    width: 160px;
+    height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    background: var(--buttonColor);
+    font-family: 'Lato', sans-serif;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.top-button:hover, .form-button:hover{
+    background-color: var(--white);
+    border: 2px solid #6c63ff;
+    color: #6c63ff;
+    cursor: pointer;
+}
+
+.content{
+    background: var(--white300); 
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 80px auto;
+    max-width: 1100px;
+}
+
+.content-box{ 
+    width: 300px;
+    height: 400px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.content-box:hover{
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.content-image{
+    height: 225px; 
+    border-radius: 5px 5px 0 0;
+}
+
+#bg-salmao{
+    background: #FF6363;
+}
+#bg-ciano{
+    background: #63ECFF;
+}
+#bg-rosa{
+    background: #F363FF;
+}
+#bg-verde{
+    background: #63FF73;
+}
+#bg-amarelo{
+    background: #FFDD63;
+}
+#bg-roxo{
+    background: #6663FF;
+}
+
+
+.content-text{
+    padding: 25px 35px;
+}
+
+.content-text h4{
+    font-size: 1.5em ;
+    font-family: "Merriweather", serif;
+    font-weight: 700 ;
+    line-height: 30px ;
+    color: var(--title);
+}
+
+.content-text p{
+    font-size: 1.1em ;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400 ;
+    line-height: 1.8em ;
+    color: var(--text);
+}
+
+
+.contact-container{
+    background: var(--bgSite);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.contact-container form{
+    width: 550px;
+    margin: 75px auto;
+    text-align: center;
+}
+
+.contact-container h1{
+    font-size: 32px;
+    font-family: 'Merriweather';
+    margin-bottom: 20px;
+    color: var(--title);
+}
+
+.contact-container input{
+    width: 100%;
+    height: 60px;
+
+    border-radius: 5px;
+    margin: 10px auto;
+    padding: 20px;
+
+    font-size: 1.15em;
+    line-height: 1.3em;
+
+    color: rgba(110, 114, 117, 0.74);
+
+    outline: none;
+}
+
+textarea{
+    width: 100%;
+    height: 150px;
+    font-family: 'Lato', sans-serif;
+    border-radius: 5px;
+    margin: 10px auto;
+    padding: 20px;
+    border: none;
+    outline: none;
+}   
+
+.form-button{
+    background: var(--buttonColor);
+    width: 100%;
+    height: 60px;
+    margin: 30px auto;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: var(--white300);
+    border-radius: 5px;
+}
+
+textarea::placeholder{
+    font-family: 'Lato', sans-serif;
+}
+
+ @media (max-width: 1103px) {
+    .top-img{
+        padding-top: 60px ;
+
+    }
+} 
+
+
+@media (max-width: 1024px) {
+    .top{
+
+        padding-top: 50px;
+    }
+
+    .content{
+        margin: 40px auto;
+    }
+
+    .top-img{
+        padding-top: 60px ;
+
+    }
+} 
+
+@media (max-width: 600px) {
+
+    .top{
+        padding: 20px;
+
+    }
+
+    .top-text{
+        margin: 30px ;
+        width: 400px;
+    }
+
+    .top-img{
+        padding:10px;
+        margin-bottom: 20px
+    }
+
+    .content{
+        margin: 30px auto;
+    }
+
+    .contact-container form{
+        width: 85%;
+        margin: 50px auto;
+    
+    }
+} 
+
+@media (max-width: 320px) {
+    .content-text{
+        padding: 25px;
+    }
+    .content-text p{
+        font-size: 1em ;
+    }
+    .content-text h4{
+        font-size: 1.3em ;
+    }
+}
+
